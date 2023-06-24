@@ -10,7 +10,7 @@
 }
 
 #sobre-mim {
-  background-image: url('/images/backgroundStage.png');
+  background-image: url('images/backgroundStage.png');
   background-size: cover;
   background-position: center;
 }
