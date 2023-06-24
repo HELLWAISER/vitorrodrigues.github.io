@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   overflow-x: hidden;
-  background-image: url('/images/desert-land.png');
+  background-image: url('images/desert-land.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   overflow-x: hidden;
@@ -56,7 +56,7 @@ hr {
   z-index: 99;
   border: none;
   outline: none;
-  background: url('/images/dente.png') no-repeat;
+  background: url('images/dente.png') no-repeat;
   width: 50px;
   height: 50px;
   cursor: pointer;
@@ -69,7 +69,7 @@ hr {
 footer {
   background-color: #f0c890;
   margin-bottom: 1px;
-  background-image: url('/images/chao.png');
+  background-image: url('images/chao.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
