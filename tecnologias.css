@@ -62,7 +62,7 @@
   left: 30px;
   right: 30px;
   border: 20px solid;
-  border-image: url('/images/hammer.png');
+  border-image: url('images/hammer.png');
   animation: piscar 2s infinite;
 }
 
@@ -164,7 +164,7 @@
   left: 30px;
   right: 30px;
   border: 20px solid;
-  border-image: url('/images/hammer.png');
+  border-image: url('images/hammer.png');
   animation: piscar 2s infinite;
 }
 
