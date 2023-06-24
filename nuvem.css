@@ -1,0 +1,30 @@
+#nuvem {
+  position: relative;
+  animation: move 40s linear infinite;
+  margin-top: 10px;
+  max-width: 800px;
+  background-color: var(--rgba-primary-2);
+}
+
+#nuvem {
+  position: relative;
+  width: 80%;
+  height: 80%;
+  padding: 3px;
+}
+
+#nuvem {
+  animation-name: slideInLeft;
+  animation-timing-function: ease-in;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(10px);
+  }
+
+  to {
+    transform: translateX(700px);
+  }
+}

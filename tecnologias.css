@@ -1,0 +1,233 @@
+#tecnologias {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to top, #f0c890,  #5773F4, #5773F4, #5773F4);
+}
+
+#secao3 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  display: inline;
+  padding: 15px;
+  margin-top: 40px;
+  align-self: flex-start;
+}
+
+.msg {
+  color: blue;
+  font-size: large;
+}
+
+#click {
+  letter-spacing: 2px;
+  line-height: 1.5;
+}
+
+/* Inicio da configuração container left */
+.grid-container-left {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+  margin-right: 700px;
+  width: 300px;
+  height: 300px;
+  flex-wrap: wrap;
+  position: absolute;
+}
+
+/* frames do pisca pisca martelos */
+@keyframes piscar {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.grid-container-left::after {
+  content: "";
+  position: absolute;
+  top: 90px;
+  bottom: 90px;
+  left: 30px;
+  right: 30px;
+  border: 20px solid;
+  border-image: url('/images/hammer.png');
+  animation: piscar 2s infinite;
+}
+
+/* conf do tamanho das img e logos dentro dos container*/
+.grid-container-left img {
+  /* imagem do bloco*/
+  width: 80px;
+  height: 80px;
+}
+
+/* configuração posição dos icones e tecnologias */
+#html {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#css {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#js {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#boot {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* conf dos overlay = blocos de tijolos */
+.overlay[alt='bloco-html'] {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.overlay[alt='bloco-css'] {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.overlay[alt='bloco-js'] {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.overlay[alt='bloco-bt'] {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.overlay[alt='bloco-html']:hover,
+.overlay[alt='bloco-css']:hover,
+.overlay[alt='bloco-js']:hover,
+.overlay[alt='bloco-bt']:hover {
+  cursor: pointer;
+}
+
+/* Inicio da configuração conainer right/esquerdo  */
+.grid-container-right {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+  margin-left: 700px;
+  width: 300px;
+  height: 300px;
+  flex-wrap: wrap;
+  position: absolute;
+}
+
+@keyframes piscar {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.grid-container-right::after {
+  content: "";
+  position: absolute;
+  top: 90px;
+  bottom: 90px;
+  left: 30px;
+  right: 30px;
+  border: 20px solid;
+  border-image: url('/images/hammer.png');
+  animation: piscar 2s infinite;
+}
+
+/* conf do tamanho das img e logos dentro dos container*/
+.grid-container-right img {
+  /* imagem do bloco*/
+  width: 80px;
+  height: 80px;
+}
+
+/* configuração posição dos icones tecnologias */
+#git {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#sass {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#wp {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#react {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* conf dos overlay = blocos de tijolo esquerdo */
+.overlay[alt='bloco-git'] {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.overlay[alt='bloco-sass'] {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.overlay[alt='bloco-wp'] {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.overlay[alt='bloco-react'] {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.overlay[alt='bloco-git']:hover,
+.overlay[alt='bloco-sass']:hover,
+.overlay[alt='bloco-wp']:hover,
+.overlay[alt='bloco-react']:hover {
+  cursor: pointer;
+}

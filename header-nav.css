@@ -1,0 +1,128 @@
+/* inicio header */
+#header {
+  position: relative;
+  background-color: var(--rgba-primary-2);
+  /*transition: height 0.8s;*/
+  width: 100%;
+  box-sizing: border-box;
+  height: 110px;
+  padding: 1rem;
+  display: flex;
+  background: rgba(196, 196, 196, 0.119);
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.286);
+  opacity: 0.9;
+}
+
+a {
+  color: rgb(255, 255, 255);
+}
+
+a:hover {
+  transition: 0.5;
+  transition: 0.9s all;
+  color: var(--rgba-primary-4);
+}
+
+#menu {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 13px;
+  list-style: none;
+  letter-spacing: 1.6px;
+  margin-right: 50px;
+  padding: 5px;
+  width: 100%;
+}
+
+#logo {
+  margin-left: 190px;
+}
+
+#menu a {
+  display: block;
+  padding: 0.5rem;
+}
+
+#btn-mobile {
+  display: none;
+}
+
+/* configuração de responsividade header/nav */
+@media (max-width: 600px) {
+  #menu {
+    display: block;
+    position: absolute;
+    width: 90%;
+    top: 132px;
+    right: -55px;
+    background: var(--rgba-primary-2);
+    transition: 0.7s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  }
+
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+
+  #hamburger {
+    border-top: 2px solid;
+    width: 20px;
+  }
+
+  #hamburger::after,
+  #hamburger::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.9s;
+    position: relative;
+  }
+
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+
+  img {
+    margin-left: 0;
+    height: 30px;
+  }
+
+  header {
+    height: 60px;
+  }
+}

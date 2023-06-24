@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+html {
+    scroll-behavior: smooth;
+  }
+folha de estilos do agente do utilizador
+
+/* 
+O motivo de vários css, é para que cada css tenha poucas linhas de estilos e cada css é referente a uma parte especifica do site, sendo assim mais fácil e direto ao ponto no que quer de fato alterar
+*/
+
+body {
+    background-color: var(--rgba-primary-2);
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--rgba-primary-2);   
+}
+
+:root {
+    --color-primary-0: #1940F4; 	
+    --color-primary-1: #cbd3fb; 
+    --color-primary-2: #5773F4; 
+    --color-primary-3: #0524B5; 
+    --color-primary-4: #051562; 
+    /* Códigos RGBA */
+    --rgba-primary-0: rgba(25, 64, 244,1); 	
+    --rgba-primary-1: rgba(176,189,248,1); 
+    --rgba-primary-2: rgba(87,115,244,1); 
+    --rgba-primary-3: rgba(5, 36,181,1); 
+    --rgba-primary-4: rgba(5, 21, 98,1); 
+}
+
+/* Fontes gerais*/
+@font-face {
+    font-family: 'fonte-8-bit';
+    src: url(/Fonts/PressStart2P.ttf);
+    }
+
+a, p, span, h1, h2, h3, h4 {
+    font-family: "fonte-8-bit";
+    text-decoration: none;
+}

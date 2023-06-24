@@ -1,0 +1,80 @@
+#sobre-mim {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+  height: 100vh;
+  margin-top: -260px;
+  overflow-x: hidden;
+}
+
+#sobre-mim {
+  background-image: url('/images/backgroundStage.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.container-sobre {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 150px;
+}
+
+#sobre-mim h2 {
+  text-align: center;
+  padding: 10px;
+  color: rgb(174, 174, 13);
+}
+
+#sobre-mim p {
+  color: #ffffff;
+  padding: 5px;
+  margin: 5px;
+  letter-spacing: 2px;
+  font-family: 'fonte-8-bit';
+  text-align: center;
+}
+
+/* bullet passando na tela */
+#bullet {
+  position: absolute;
+  left: 0;
+  animation: move 19s infinite;
+  animation: slideInRight 19s linear forwards;
+  margin-top: 10px;
+  overflow-x: hidden;
+
+}
+
+#bullet {
+  position: relative;
+  padding: 50px;
+  overflow-x: hidden;
+}
+
+#bullet {
+  animation-name: slideInRight;
+  animation-timing-function: ease-out;
+  animation-direction: normal;
+}
+
+#bullet img {
+  width: 50px;
+  height: 40px;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
+}

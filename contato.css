@@ -1,0 +1,82 @@
+#contato {
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+  background-image: url('/images/desert-land.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+
+#sol {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contato {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin-left: 120px;
+  margin-top: 10px;
+  align-items: left;
+  gap: 10px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  gap: 15px;
+}
+
+.rede-social img {
+  width: 25px;
+  height: 25px;
+}
+
+hr {
+  height: -1px;
+  background: black;
+  width: 10%;
+  justify-content: left;
+  margin-left: 75px;
+}
+
+/* botão para voltar ao topo */
+#myBtn {
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background: url('/images/dente.png') no-repeat;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  opacity: 0.4;
+}
+
+footer {
+  background-color: #f0c890;
+  margin-bottom: 1px;
+  background-image: url('/images/chao.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 20px;
+  text-align: center;
+}
+
+#fim {
+  text-align: center;
+}

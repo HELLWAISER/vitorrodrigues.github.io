@@ -1,0 +1,36 @@
+#sol {
+    position: fixed;
+    animation: move 4s linear infinite;
+    overflow-x: hidden; 
+    /*background-color: #ee7d42;*/
+  }
+  
+  #sol {
+    position: relative;
+  }
+  
+  #sol {
+    animation-name: sol;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+  }
+  
+@keyframes sol {
+    0% {
+      transform: translateX(0) translateY(0);
+    }
+    25% {
+      transform: translateX(300px) translateY(5px); /*faz descer */
+    }
+    50% {
+      transform: translateX(600px) translateY(0);
+    }
+    75% {
+      transform: translateX(30px) translateY(90px);
+    }
+    100% {
+      transform: translateX(10) translateY(0);
+    }
+  }
+  
+
