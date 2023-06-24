@@ -37,7 +37,7 @@ body {
 /* Fontes gerais*/
 @font-face {
     font-family: 'fonte-8-bit';
-    src: url(/Fonts/PressStart2P.ttf);
+    src: url(Fonts/PressStart2P.ttf);
     }
 
 a, p, span, h1, h2, h3, h4 {
